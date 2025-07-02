@@ -26,12 +26,11 @@ const client = new Client({
 });
 
 const roleMap = {
-  "🧠": "1389289525259534427",
-  "💻": "1389259991181037819",
-  "🎨": "1389289308900556892",
-  "🗞️": "1389289399295938742",
-  "📸": "1389684342841675796",
-  "🎥": "1389684572500787472",
+  "🧠": "1389934823551799388",
+  "💻": "1389934863745945680",
+  "🎨": "1389934910877470800",
+  "🗞️": "1389934945396592741",
+
 };
 
 const dataPath = path.join(__dirname, "reactionData.json");
@@ -55,7 +54,7 @@ function drawRoundedRect(ctx, x, y, width, height, radius) {
 // === Bot Ready ===
 client.once("ready", async () => {
   console.log(`✅ Logged in as ${client.user.tag}`);
-  const channel = client.channels.cache.get("1389273427541626952");
+  const channel = client.channels.cache.get("1358086341694586991");
   if (!channel) return console.error("❌ Channel not found.");
 
   const data = JSON.parse(fs.readFileSync(dataPath, "utf8"));
@@ -73,8 +72,6 @@ React to get your roles based on your interests:
 💻 — **Tech Team**  
 🎨 — **Creative Team**  
 🗞️ — **Media Team**  
-📸 — **Photography Team**  
-🎥 — **Video Team**
 
 _You can pick multiple roles 💫_
       `)
