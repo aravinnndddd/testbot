@@ -142,7 +142,7 @@ client.on(Events.MessageReactionRemove, async (reaction, user) => {
 
 client.on(Events.GuildMemberAdd, async (member) => {
 // PURPLER role ID
-  const welcomeRoleId = "1389293606073929820"; 
+  const welcomeRoleId = "1389650556288499855"; 
 
   const role = member.guild.roles.cache.get(welcomeRoleId);
   if (!role) {
